@@ -14,7 +14,8 @@
     <br>
     <button type="submit" onclick="zbritja()">-</button>
     <br>
-    <button type="submit" onclick="shumezimi()">*</button>button>
+    <button type="submit" onclick="shumezimi()">*</button>
+    <button type="submit" onclick="pjestimi()">/</button>
     <p id="Rezultati"></p>
       <script>
         function sum()
@@ -36,6 +37,13 @@
           var a=Number(document.getElementById('nr1').value);
           var b=Number(document.getElementById('nr2').value);
           var c=a*b;
+          document.getElementById('Rezultati').innerHTML=c;
+        }
+         function pjestimi()
+        {
+          var a=Number(document.getElementById('nr1').value);
+          var b=Number(document.getElementById('nr2').value);
+          var c=a/b;
           document.getElementById('Rezultati').innerHTML=c;
         }
       </script>
