@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Java 1</title>
+  </head>
+  <body>
+    <label>Numri i pare</label>
+    <input type="number" id="nr1">
+    <br>
+    <label>Numri i dyte</label>
+    <input type="number" id="nr2">
+    <br>
+    <button type="submit" onclick="sum()">+</button>
+      <p id="Rezultati"></p>
+      <script>
+        function sum()
+        {
+          var a=Number(document.getElementById('nr1').value);
+          var b=Number(document.getElementById('nr2').value);
+          var c=a+b;
+          document.getElementById('Rezultati').innerHTML=c;
+        }
+      </script>
+  </body>
+</html>
