@@ -16,6 +16,19 @@
     <button type="submit" onclick="shumezimi()">*</button>
     <button type="submit" onclick="pjestimi()">/</button>
     <p id="Rezultati"></p>
+    <br>
+    <br>
+
+    <h1>Rritje/Zbrotje te numrit</h1>
+    <p id="numri">0</p>
+    <button type="submit" onclick="rritje()">Rritje+</button>
+    <button type="submit" onclick="zbritje()">Zbritje-</button>
+    
+    
+
+
+
+    
       <script>
         function sum()
         {
@@ -52,6 +65,15 @@
           document.getElementById('Rezultati').innerHTML=c;
           }
         }
+
+        
+        var n=0;
+        function rritje()
+        {
+          n=n+1;
+          document.getElementById('numri').innerHTML=n;
+        }
+          
       </script>
   </body>
 </html>
